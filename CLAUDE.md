@@ -53,7 +53,7 @@ The plugin hooks into `get_locale` (via `yourls_add_filter`) and returns the adm
 
 ## Alignment Reference
 
-This plugin follows the same structural and visual conventions as the other plugins in this author's YOURLS ecosystem. The primary visual reference is `YOURLS-URLFallback`.
+This plugin follows the same structural and visual conventions as the other plugins in this author's YOURLS ecosystem.
 
 ## Release conventions
 
