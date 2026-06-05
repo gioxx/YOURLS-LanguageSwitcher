@@ -14,6 +14,9 @@ function ls_print_admin_assets() {
     if ( $js_url !== '' ) {
         echo '<script src="' . yourls_esc_url( $js_url ) . '?v=' . $js_ver . '"></script>';
     }
+    echo '<script>window.LS_Data = ' . json_encode( [
+        'confirm_reset' => yourls__( 'Are you sure you want to reset the language to default?', 'yourls-language-switcher' ),
+    ], JSON_HEX_TAG | JSON_HEX_AMP ) . ';</script>';
 }
 
 function ls_config_page() {
@@ -24,16 +27,23 @@ function ls_config_page() {
         $message = ls_handle_save();
     }
 
+    if ( isset( $_POST['ls_reset'] ) ) {
+        yourls_verify_nonce( 'ls_reset', isset( $_POST['nonce_reset'] ) ? $_POST['nonce_reset'] : '' );
+        yourls_delete_option( LANG_SW_OPTION );
+        $message = [ 'success' => true, 'text' => yourls__( 'Language reset to English (default).', 'yourls-language-switcher' ) ];
+    }
+
     $available  = ls_available_locales();
     $current    = ls_selected_locale();
     $nonce      = yourls_create_nonce( 'ls_config' );
+    $nonce_reset = yourls_create_nonce( 'ls_reset' );
 
     ls_print_admin_assets();
     ls_show_update_notice();
 
     echo '<div class="ls-header">';
-    echo '<h2 class="ls-title">&#127760; <span class="ls-title-text">Language Switcher</span></h2>';
-    echo '<p class="ls-version">Version ' . LANG_SW_VERSION . '</p>';
+    echo '<h2 class="ls-title">&#127760; <span class="ls-title-text">YOURLS Language Switcher</span></h2>';
+    echo '<p class="plugin-version">' . yourls__( 'Version: ', 'yourls-language-switcher' ) . LANG_SW_VERSION . '</p>';
     echo '</div>';
 
     if ( $message ) {
@@ -84,6 +94,10 @@ function ls_config_page() {
 
     echo '<div class="ls-actions">';
     echo '<button type="submit" name="ls_save" class="button">&#128190; ' . yourls__( 'Save Language', 'yourls-language-switcher' ) . '</button>';
+    echo '<button type="submit" name="ls_reset" class="button" ';
+    echo 'onclick="return confirm(window.LS_Data.confirm_reset);" formnovalidate>';
+    echo '&#128260; ' . yourls__( 'Reset to Default', 'yourls-language-switcher' ) . '</button>';
+    echo '<input type="hidden" name="nonce_reset" value="' . yourls_esc_attr( $nonce_reset ) . '" />';
     echo '</div>';
 
     echo '</form>';
@@ -91,7 +105,7 @@ function ls_config_page() {
     echo '<div class="plugin-footer">';
     echo '<div class="plugin-footer-top">';
     echo '<span>';
-    echo '<a href="https://yourls.gioxx.org/plugins/language-switcher" target="_blank" rel="noopener noreferrer">&#127760; Language Switcher</a>';
+    echo '<a href="https://yourls.gioxx.org/plugins/language-switcher" target="_blank" rel="noopener noreferrer">&#127760; YOURLS Language Switcher</a>';
     echo '&nbsp;&middot;&nbsp;';
     echo '<img src="https://github.githubassets.com/favicons/favicon.png" class="github-icon" alt="" />';
     echo '<a href="' . LANG_SW_GITHUB_URL . '" target="_blank" rel="noopener noreferrer">GitHub</a>';

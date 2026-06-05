@@ -60,7 +60,19 @@ msgid "Selecting <strong>English (default)</strong> removes any override and fal
 msgstr ""
 
 #: inc/admin-page.php
+msgid "Version: "
+msgstr ""
+
+#: inc/admin-page.php
 msgid "Save Language"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Reset to Default"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Are you sure you want to reset the language to default?"
 msgstr ""
 
 #: inc/admin-page.php

@@ -17,7 +17,7 @@ msgstr ""
 
 #: plugin.php
 msgid "Language Switcher"
-msgstr "Selettore lingua"
+msgstr "Lingua predefinita di YOURLS"
 
 #: inc/helpers.php
 msgid "English (default)"
@@ -60,8 +60,20 @@ msgid "Selecting <strong>English (default)</strong> removes any override and fal
 msgstr "Selezionando <strong>Inglese (predefinito)</strong> si rimuove qualsiasi sovrascrittura e si ritorna alla lingua impostata in <code>config.php</code>."
 
 #: inc/admin-page.php
+msgid "Version: "
+msgstr "Versione: "
+
+#: inc/admin-page.php
 msgid "Save Language"
 msgstr "Salva lingua"
+
+#: inc/admin-page.php
+msgid "Reset to Default"
+msgstr "Ripristina impostazioni predefinite"
+
+#: inc/admin-page.php
+msgid "Are you sure you want to reset the language to default?"
+msgstr "Sei sicuro di voler ripristinare la lingua predefinita?"
 
 #: inc/admin-page.php
 msgid "Back to top"
