@@ -1,0 +1,92 @@
+# YOURLS Language Switcher — translation template
+# Copyright (C) 2026 Gioxx
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: YOURLS Language Switcher 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/gioxx/YOURLS-LanguageSwitcher/issues\n"
+"POT-Creation-Date: 2026-06-05\n"
+"PO-Revision-Date: 2026-06-05\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: yourls-language-switcher\n"
+
+#: plugin.php
+msgid "Language Switcher"
+msgstr ""
+
+#: inc/helpers.php
+msgid "English (default)"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Language Settings"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Active Language"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Select the language for the YOURLS admin interface. Only languages with installed translation files appear in this list."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "No translation files found. Install YOURLS language files in <code>user/languages/</code> to enable language switching."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Notes"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Language switching <strong>requires the corresponding <code>.mo</code> translation file</strong> to be present in the <code>user/languages/</code> directory of your YOURLS installation."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "If a language is not listed, its translation file has not been installed — the plugin cannot switch to it."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "YOURLS translation files are available in the <a href=\"https://github.com/YOURLS/YOURLS/tree/master/user/languages\" target=\"_blank\" rel=\"noopener noreferrer\">YOURLS GitHub repository</a>."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Selecting <strong>English (default)</strong> removes any override and falls back to the language set in <code>config.php</code>."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Save Language"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Back to top"
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Language reset to English (default)."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Selected language is not available. Make sure its translation file is installed."
+msgstr ""
+
+#: inc/admin-page.php
+msgid "Language updated successfully."
+msgstr ""
+
+#: inc/update-check.php
+msgid "New version available: <strong>%s</strong>!"
+msgstr ""
+
+#: inc/update-check.php
+msgid "View details on GitHub"
+msgstr ""
+
+#: inc/update-check.php
+msgid "Update Available"
+msgstr ""

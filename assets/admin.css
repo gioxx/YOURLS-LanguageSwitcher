@@ -1,0 +1,254 @@
+/* YOURLS Language Switcher — admin styles */
+
+/* Header */
+.ls-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 18px;
+}
+.ls-title {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+.ls-title-text {
+    background: -webkit-linear-gradient(#0073aa, #00a8e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ls-version {
+    margin: 0;
+    font-size: .76rem;
+    color: #667885;
+}
+
+/* Panel */
+.ls-panel {
+    background: #fff;
+    border: 1px solid #d9e6ef;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 0 rgba(2,27,45,.04);
+    padding: 16px;
+}
+.ls-panel h3 {
+    margin: 0 0 12px;
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: #0a4b78;
+}
+
+/* Rows */
+.ls-row {
+    margin-bottom: 12px;
+}
+.ls-row:last-child {
+    margin-bottom: 0;
+}
+.ls-row label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #26323a;
+    font-size: .84rem;
+}
+.ls-panel small {
+    display: block;
+    color: #667885;
+    font-size: .73rem;
+    margin-bottom: 7px;
+}
+.ls-row select {
+    width: 100%;
+    max-width: 400px;
+    height: 34px;
+    border: 1px solid #c7d8e4 !important;
+    border-radius: 8px !important;
+    padding: 0 9px;
+    background: #fff;
+    color: #26323a;
+    box-sizing: border-box;
+}
+.ls-row select:focus {
+    border-color: #0073aa !important;
+    outline: none;
+}
+
+/* No-languages notice */
+.ls-no-langs {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #fff8e9;
+    border-left: 4px solid #d79a2b;
+    border-radius: 0 6px 6px 0;
+    font-size: .84rem;
+    color: #5a4000;
+}
+.ls-no-langs code {
+    background: rgba(0,0,0,.06);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: .82rem;
+}
+
+/* Info box */
+.ls-info-box {
+    background: #f5fbfe;
+    border-left: 4px solid #4ea1cf;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 12px;
+    margin-bottom: 18px;
+}
+.ls-info-title {
+    margin: 0 0 6px;
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: #0a5e87;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ls-info-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 6px;
+    border-radius: 3px;
+    background: #86b8d8;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 700;
+    vertical-align: 1px;
+    flex-shrink: 0;
+}
+.ls-info-list {
+    margin: 0;
+    padding-left: 16px;
+}
+.ls-info-list li {
+    margin: 4px 0;
+    font-size: .76rem;
+}
+.ls-info-list a {
+    color: #0073aa;
+    text-decoration: none;
+}
+.ls-info-list a:hover {
+    text-decoration: underline;
+}
+.ls-info-list code {
+    background: rgba(0,0,0,.06);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: .82rem;
+}
+
+/* Action buttons */
+.ls-actions {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.ls-actions .button {
+    padding: 8px 18px !important;
+    border-radius: 10px !important;
+    background: #fff !important;
+    border: 1px solid #8ec5f7 !important;
+    color: #1f2328 !important;
+    font-weight: 400 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.ls-actions .button:hover,
+.ls-actions .button:focus {
+    background: #f4f9ff !important;
+    border-color: #72aee6 !important;
+    color: #0a4b78 !important;
+    text-shadow: none !important;
+}
+
+/* Update-available banner */
+.ls-update-notice {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px !important;
+    margin: 0 0 20px !important;
+    border-left: 4px solid #8ec5f7 !important;
+    border-bottom: 2px solid #8ec5f7 !important;
+    border-radius: 0 !important;
+}
+
+/* Update badge in page title */
+.ls-update-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #e6f4ff;
+    border: 1px solid #8ec5f7;
+    color: #0a4b78;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* Notices */
+.notice-success {
+    background: #eafaf0;
+    border-left: 4px solid #3da56a;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+.notice-warning {
+    background: #fff8e9;
+    border-left: 4px solid #d79a2b;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+.plugin-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: .9em;
+    color: #666;
+    text-align: left;
+    line-height: 1.7;
+}
+.plugin-footer a {
+    color: #0073aa;
+    text-decoration: none;
+}
+.plugin-footer a:hover {
+    text-decoration: underline;
+}
+.plugin-footer .github-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    display: inline-block;
+}
+.plugin-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+}
