@@ -53,7 +53,7 @@ The plugin hooks into `get_locale` (via `yourls_add_filter`) and returns the adm
 
 ## Alignment Reference
 
-This plugin follows the structural and visual conventions documented in `/Users/gioxx/Documents/GitHub/ALIGNMENT_PROMPT.md`. The primary visual reference is `YOURLS-URLFallback` (`/Users/gioxx/Documents/GitHub/YOURLS-URLFallback`).
+This plugin follows the same structural and visual conventions as the other plugins in this author's YOURLS ecosystem. The primary visual reference is `YOURLS-URLFallback`.
 
 ## Release conventions
 
